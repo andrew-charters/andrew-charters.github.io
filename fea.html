@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Andrew Charters' Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Andrew Charters</span>
+								</a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>RS Bookshelf Speakers</h1>
+							<h2>YG Acoustics</h2>
+							<h3>May 2019 - July 2019</h3>
+							<span class="image left"><img src="images/fea/fea.png" alt="" /></span>
+							<p>During the summer of 2019 I was fortunate enough to work at YG Acoustics, manufacturer of the highest-fidelity loudspeakers in the world. I committed myself to learning as much as I could while I was there, and what better way to learn than to design and build my own speakers. Each day after work I would spend another 8 hours researching acoustic design at home. After a month I was invited to sit down with the founder, Yoav Geva, who generously agreed to help guide me in my project.</p>
+							<span class="image right"><img src="images/fea/build1.png" alt="" /></span>
+							<p>I chose some inexpensive but high-quality drivers and designed a cabinet to hold them. The cabinet had rounded edges to minimize diffraction effects, a precise volume to provide the correct air-spring restoring force to the woofer, rigid bracing to avoid panel resonances without impeding airflow, and an unconventional helmholtz resonator carefully tuned to eliminate standing waves. I used Finite Element Analysis to simulate the cabinet and identify weak points and modes. Finally, with Yoav's approval, I built a prototype to measure the frequency responses of the drivers in the enclosure. With this data I could move on to step two, designing the crossover circuit.</p>
+							<span class="image left"><img src="images/fea/cross.png" alt="" /></span>
+							<p>The crossover circuit's first job is to split the audio signal into high frequencies for the tweeter and low frequencies for the woofer. Its second (and often overlooked) job is to correct the frequency responses of the drivers. This means removing breakup resonances with narrow notch filters and adjusting tonal balance with broad shelf filters. The goal is for the output of the speaker to be the same volume regardless of frequency. The challenge is to achieve that while maintaining a high power efficiency, close phase alignment through the crossover region (the middle frequencies sent to both the woofer and tweeter), and a small enough bill of materials to avoid breaking the bank. Through careful circuit design and guidance from Yoav, I as able to achieve a flat response to within +/- 1.5 decibels, a sensitivity of 86 decibels, and phase alignment within +/- 15 degrees.</p>
+							<span class="image right"><img src="images/fea/build2.png" alt="" /></span>
+							<p>With the design finished, my dad and I got to work building two pair, a set for each of us. We were careful to keep tight tolerances for an airtight enclosure and orient the physical circuit to avoid inductor coupling. When we were finished, we listened with pride to Bach's "Air on the G string" through our new custom hi-fi speakers. What would have cost thousands of dollars, we built for just a few hundred.</p>
+							<span class="image right"><img src="images/fea/build3.png" alt="" /></span>
+							<p>Between the skills gained, mentorship recieved, and quality time spent with my dad, this project remains one of the most rewarding endeavors I have undertaken. My dad and I continue to enjoy music on our speakers every day.</p>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

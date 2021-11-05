@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Andrew Charters' Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Andrew Charters</span>
+								</a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Autonomous Forklift</h1>
+							<h2>University of Colorado - Mechatronics</h2>
+							<h3>January 2019 - May 2019</h3>
+							<span class="image fit"><img src="images/mech/states.png" alt="" /></span>
+							<span class="image right"><img src="images/mech/robot.png" alt="" /></span>
+							<p>Mechatronics was one of my favorite courses at university. After some basic electronics lectures, we spent most of the semester building autonomous forklifts capable of navigating a mock warehouse, retrieving pallets, and delivering them to any of multiple drop-off zones all while avoiding obstacles including human workers and other autonomous vehicles. We were challenged to develop and prototype software, electrical, and mechanical systems and to integrate those systems into a functional product in only a few weeks.</p>
+							<span class="image left"><img src="images/mech/chassis.png" alt="" /></span>
+							<p>We began with an acrylic chassis, a DC motor drivetrain, and two line followers. An arduino used the line followers and a motor driver to steer the robot along aisles. The second subsystem added a raspberry pi and a webcam to navigate intersections via QR codes. We used Dijkstra’s algorithm to navigate the warehouse, treating each intersection as a node. Finally we attached the gripper assembly, built from a 3D printed fork, a camera for pallet alignment, a modified 3D printer gantry, and an arduino to control it all. The gripper assembly was my primary responsibility. Challenges included lense distortion on the alignment camera, having to disable and re-enable line followers for pallet alignment, and ensuring pallet retension.</p>
+							<p>In the end we were successful in achieving each of the project's goals: to navigate the warehouse without hitting obstacles, to collect any pallet assigned, and to deliver that pallet to any drop-off location.</p>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

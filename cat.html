@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Andrew Charters' Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Andrew Charters</span>
+								</a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Concurrent Algorithmic Trading</h1>
+							<h2>Collaborative Project</h2>
+							<h3>May 2020 - April 2021</h3>
+							<span class="image fit"><img src="images/cat/stdev.png"/></span>
+							<p>I finished my masters in May 2020 as the COVID-19 pandemic hit. The job market was saturated and stocks were cheap. I decided to see if I could apply the coding knowledge I had learned in school to the stock market. Casey O'Connor, my friend and a talented DevOps engineer, was also excited about the idea. We teamed up, made accounts with Alpaca Markets, a free api-based stock broker, and got to work.</p>
+							<br>
+							<p>The Concurrent Algorithmic Trading (CAT) project was born of an idea, that algorithmic stock trading portfolios should diversify strategies in the same way they diversify positions, and two limitations of the alpaca.markets platform:</p>
+							<ul>
+								<li>There was no way to track multiple portfolios on the same account</li>
+								<li>Users were limited to 200 API calls per minute</li>
+							</ul>
+							<p>To solve these limitations, we created a system that tracks buying power, orders, and positions for any number of unique strategies independently while sharing as many resources (including API calls) as possible.</p>
+							<br>
+							<p>While Casey and I both moved on to other projects before making a dime off the CAT project, we gained valuable experience from the endeavor. Personally I learned about asynchronous programming, unit testing, and project management. When I look back on my work, four major contributions stand out:</p>
+							<ul>
+								<li>I built a concurrent & modular trading framework with optimized risk management</li>
+								<li>I designed robust backtesting code to mimic live trading & data management</li>
+								<li>I performed rigorous validation including unit, integration, & system testing</li>
+								<li>I managed a collaborative workflow including setting S.M.A.R.T. goals for myself and others</li>
+							</ul>
+							<p>I hope to return to this project with even more knowledge and experience in the future. In the meantime, <a href="https://github.com/anch8561/Concurrent-Algorithmic-Trading">feel free to check it out on github!</a></p>
+							<p>At the top of this page you can see backtesting results for a simple mean reversion algorithm running in the CAT framework.</p>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

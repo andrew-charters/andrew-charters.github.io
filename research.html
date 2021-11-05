@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Andrew Charters' Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Andrew Charters</span>
+								</a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Particle Simulation Research</h1>
+							<h2>University of Colorado - Matter Assembly Computation Lab</h2>
+							<h3>May 2018 - December 2019</h3>
+							<p>While completing my masters degree, I worked in the Matter Assembly Computation Lab (MACLab). The lab's vision was to create a system to generatively design 3D printable robots. This can be broken down into a few simple steps. First a human would define a task that a robot should perform. A computer would then generate a design for the robot, simulate it using Finite Element Analysis (FEA), and iterate using optimization algorithms until it converged on a practical design. This final design would then be printed using a specialized 3D printer that would embed the electronics during the build process such that once complete, the robot would walk off the build plate. This was an ambitious vision, but each individual part showed promise.</p>
+							<p>My piece of the puzzle was developing a fast FEA method. Standard FEA packages such as Abaqus struggle to solve deformation in the heterogeneous (partially rigid and partially soft) materials we would be 3D printing. That translates to prohibitively long computation times for a generative design process. Therefore I was tasked with developing a GPU accelerated particle simulation for use in meshless FEA. Parallel processing on a GPU would provide speed and voxels (represented as a network of particles) are better than a traditional FEA mesh at simulating a heterogeneous 3D printed part. The goal was to simulate a million voxels in real-time.</p>
+							<p>I began by looking for existing products that could be modified for our goals. First I investigated NVIDIA FleX, a real-time particle-based physics simulation meant for use in video games. FleX presented 2 challenges: it was written in C++, a language I did not know, and it was closed-source, meaning the only way to find out how it worked was through experimentation. Initial progress was slow as I took an online course to learn C++, but once I gained my footing in the language, I discovered that FleX was not physically accurate enough for our purposes. I investigated a couple other potential solutions, PETSc and Titan, but with my new knowledge of C++ could quickly dismiss them as nonviable. The final option was to make a new particle framework from scratch.</p>
+							<p>Some of the PhD students in adjacent labs were interested in using a similar simulation tool for their reserach on soft robotics and feedback controls. We collaborated to create a new tool which could run large networks of particles in real-time on a GPU. We designed it to be modular so that users could define their own materials and constraints, regardless of complexity. Other contributors added features for testing actuators and control loops. We wrote it in a new coding language called Julia that combined the simple syntax of python with the performance of C++, making the tool accessible and efficient. Best of all the project had momentum from multiple contributors so that it continued development after I finished my degree.</p>
+							<p><a href="https://www.matterassembly.org">You can learn more about MACLab by visiting the website!</a></p>
+							<p>Below you can see a simple FleX displacement simulation on the left and a more complex SRTx wave propagation simulation on the right.</p>
+							<iframe src="https://drive.google.com/file/d/1nLb0ZFOG5Zy0HM1qzrvXunsbL7SV_Jh0/preview" width="640" height="480" allow="autoplay"></iframe>
+							<iframe src="https://drive.google.com/file/d/1BjQYaQ5mr0NqehtfOC4tXBmL9X5TNmMX/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
